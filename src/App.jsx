@@ -212,7 +212,7 @@ export default function GroundAgent() {
             <div style={{ color: "#446655", marginBottom: 6, letterSpacing: 2 }}>PAYMENT ENDPOINT</div>
             <div style={{ color: "#00ff88", letterSpacing: 1 }}>SOL · BASE · x402 COMPATIBLE</div>
             <div style={{ color: "#aabbcc", marginTop: 8, fontSize: 11 }}>
-              wallet: <span style={{ color: "#fff" }}>ground-agent.sol</span>
+              wallet: <span style={{ color: "#fff" }}>2idvjzamk5hFr9XjMHcSGorFBEUfZaKHZ9MNXJu7CNrL</span>
               <span style={{ color: "#334455" }}> [configure your wallet here]</span>
             </div>
           </div>
@@ -411,7 +411,7 @@ export default function GroundAgent() {
               {
                 step: "03", title: "FUND PAYMENT",
                 desc: "Send USDC or USDT to the wallet address. Payment confirms task activation. For T0/T1, prepayment required. T3+ can negotiate escrow.",
-                code: `network: Solana (preferred) | Base\ntoken: USDC · USDT\nescrow: available for T3+\nwallet: ground-agent.sol`,
+                code: `network: Solana (preferred) | Base\ntoken: USDC · USDT\nescrow: available for T3+\nwallet: 2idvjzamk5hFr9XjMHcSGorFBEUfZaKHZ9MNXJu7CNrL`,
               },
               {
                 step: "04", title: "EXECUTION + PROOF",
