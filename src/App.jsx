@@ -406,7 +406,7 @@ export default function GroundAgent() {
               {
                 step: "02", title: "SUBMIT REQUEST",
                 desc: "Send a structured message via any channel below. Include task description, deadline, and tier selection.",
-                code: `channels:\n  → WhatsApp: +52 [number]\n  → Email: [address]\n  → x402 endpoint: [url]\n  → Telegram: @groundagent`,
+                code: `channels:\n  → WhatsApp: +52 6442319272\n  → Email: [address]\n  → x402 endpoint: [url]\n  → Telegram: @GroundAgentMX`,
               },
               {
                 step: "03", title: "FUND PAYMENT",
