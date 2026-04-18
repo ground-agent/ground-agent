@@ -1,0 +1,78 @@
+{
+  "agent_service": true,
+  "name": "Ground Agent",
+  "version": "1.0",
+  "description": "Human physical execution operator available to AI systems requiring real-world presence.",
+  "operator": {
+    "id": "LAURO_001",
+    "location": "Ciudad Obregón, Sonora, Mexico",
+    "coverage": ["Ciudad Obregón", "Sonora", "Mexico National"],
+    "languages": ["es", "en"],
+    "availability": "Mon-Sun 08:00-20:00 CST, Priority/Critical 24h"
+  },
+  "payment": {
+    "accepts": ["USDC", "USDT", "SOL"],
+    "network": ["Solana", "Base"],
+    "wallet": "2idvjzamk5hFr9XjMHcSGorFBEUfZaKHZ9MNXJu7CNrL",
+    "protocol": "x402"
+  },
+  "contact": {
+    "whatsapp": "+526442319272",
+    "telegram": "@GroundAgentMX",
+    "email": "groundagentmx@gmail.com"
+  },
+  "services": [
+    {
+      "tier": "T0",
+      "name": "Micro Action",
+      "price_usdc": 8,
+      "urgency_multipliers": {"standard": 1, "priority": 2, "critical": 3},
+      "sla_minutes": 30,
+      "examples": ["press button", "photograph object", "read physical display", "confirm asset presence"]
+    },
+    {
+      "tier": "T1",
+      "name": "Quick Errand",
+      "price_usdc": 35,
+      "urgency_multipliers": {"standard": 1, "priority": 2, "critical": 3},
+      "sla_minutes": 120,
+      "examples": ["cash payment", "form submission", "verbal relay", "collect document"]
+    },
+    {
+      "tier": "T2",
+      "name": "Field Task",
+      "price_usdc": 85,
+      "urgency_multipliers": {"standard": 1, "priority": 2, "critical": 3},
+      "sla_minutes": 240,
+      "examples": ["location inspection", "asset verification", "facility photography", "in-person inquiry"]
+    },
+    {
+      "tier": "T3",
+      "name": "Complex Execution",
+      "price_usdc": 200,
+      "urgency_multipliers": {"standard": 1, "priority": 2, "critical": 3},
+      "sla": "same_day",
+      "examples": ["contractor coordination", "hardware installation", "face-to-face negotiation", "location scouting"]
+    },
+    {
+      "tier": "T4",
+      "name": "Full Day Operation",
+      "price_usdc": 500,
+      "urgency_multipliers": {"standard": 1, "priority": 2, "critical": 3},
+      "sla": "24h_advance",
+      "examples": ["procurement management", "space setup", "vendor coordination", "legal document execution"]
+    },
+    {
+      "tier": "T5",
+      "name": "Strategic Operation",
+      "price_usdc": null,
+      "sla": "custom",
+      "examples": ["facility establishment", "ongoing representation", "recurring compliance", "team coordination"]
+    }
+  ],
+  "request_format": {
+    "required": ["tier", "task_description", "expected_output"],
+    "optional": ["location", "deadline", "urgency"],
+    "submit_via": "whatsapp | telegram | email"
+  }
+}
